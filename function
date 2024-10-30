@@ -1,0 +1,51 @@
+def add(a,b):
+  return a + b 
+
+def sub(a,b):
+  return a - b 
+  
+def mul(a,b):
+  return a * b 
+  
+def div(a,b):
+  return a/b 
+  
+def Eingabe():
+    try:
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+        return a, b
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")
+        return None, None
+def calculator():
+    print("Select operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+
+    choice = input("Enter choice (1/2/3/4): ")
+    result = None
+
+    if choice in ['1', '2', '3',"4"]:
+        a, b = Eingabe()
+        
+        # Only proceed if the numbers are valid
+        if a is not None and b is not None:
+            if choice == '1':
+                result = add(a, b)
+                operation = '+'
+            elif choice == '2':
+                result = sub(a, b)
+                operation = '-'
+            elif choice == '3':
+                result = mul(a, b)
+                operation = '*'
+            
+            # Print the result at the end
+            print(f"The result of {a} {operation} {b} is: {result}")
+    else:
+        print("Invalid choice. Please choose 1, 2, 3, or 4.")
+
+calculator()
