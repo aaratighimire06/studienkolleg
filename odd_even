@@ -1,0 +1,15 @@
+z = input("Gib ein Zahl ein ")
+z_i = int(z)
+
+gerade = 0
+ungerade = 0
+
+
+for i in range(0, z_i + 1, 2):
+  gerade += i
+
+for i in range(0, z_i + 1, 2):
+  ungerade += i+1
+
+print("Die Summe der gerade Zahlen: ", gerade)
+print("Die Summe der ungerade Zahlen: ", ungerade)
