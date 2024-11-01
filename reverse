@@ -1,0 +1,21 @@
+def get_input():
+    # Gets the word from the user
+    return input("Enter a word: ")
+
+
+def print_vertical(word):
+    for letter in word:
+        print(letter)
+
+def print_vertical_reverse(word):
+    for letter in reversed(word):
+        print(letter)
+
+
+# Example usage
+input_word = input("Enter a word: ")
+print_vertical_reverse(input_word)
+
+
+word = get_input()
+print_vertical(word)
