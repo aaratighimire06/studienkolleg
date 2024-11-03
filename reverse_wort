@@ -1,0 +1,28 @@
+def eingeben():
+  w = input("Gib ein Wort ein")
+  return w
+
+def ausgeben(w):
+  l = len(w)
+  for i in range(l):
+    print(w[i], " ", w[l-1-i])
+
+
+def auswahlen():
+  print("1. Wort eingeben")
+  print("2. Wort ausgeben")
+  print("3. Program endet")
+  Auswahl = input("Gib eine Wahl aus ")
+  return Auswahl
+
+wort = ""
+while True:
+  Auswahl = auswahlen()
+  if Auswahl == "1":
+    wort = eingeben()
+  if Auswahl == "2":
+    ausgeben(wort)
+  if Auswahl == "3":
+    break
+
+print("Das Program Endet")
