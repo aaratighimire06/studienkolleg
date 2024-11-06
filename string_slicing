@@ -1,0 +1,6 @@
+print("Sie müssen eine Wort eingeben/n")
+w = input("Eine Wort eingeben: ")
+l = len(w)
+
+for i in range(l):
+  print(w[i], " ", w[l-1-i])
