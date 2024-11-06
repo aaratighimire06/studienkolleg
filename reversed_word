@@ -1,0 +1,8 @@
+print("Sie müssen eine Wort eingeben/n")
+w = input("Eine Wort eingeben: ")
+
+reversed_word = ""
+for char in w:
+  reversed_word = char + reversed_word
+
+print(reversed_word)
