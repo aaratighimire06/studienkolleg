@@ -1,0 +1,7 @@
+print("Diese Program Datum von heute in format: TT.MM.JJJJ")
+
+tag = "03"
+monat = "11"
+Jahr = "2024"
+
+print(tag + "." + monat + "." + Jahr)
