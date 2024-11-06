@@ -1,0 +1,10 @@
+eingabe = input("Gib eine Zahl ein : ")
+i = int(eingabe)
+numbers = []
+
+total = 0
+for i in range(1, i+1):  # range goes from 1 to einagbe+1 
+    total = total + i 
+    numbers.append(i)
+
+print("The sum is,", numbers, total)
