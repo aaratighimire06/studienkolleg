@@ -47,5 +47,4 @@ def calculator():
             print(f"The result of {a} {operation} {b} is: {result}")
     else:
         print("Invalid choice. Please choose 1, 2, 3, or 4.")
-
 calculator()
